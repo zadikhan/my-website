@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZAM'S world</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="sidebar">
+                 <nav>
+      
+                    <ul>
+                        <li> <a href="/">HOME</a> </li>
+                        <li> <a href="/intro.ejs">INTRO</a> </li>
+                        <li> <a href="/social.ejs">PLATFORM</a> </li>
+                        <li> <a href="/contact.ejs">CONTACT</a> </li>
+                        <li> <a href="/skills.ejs">SKILLS</a> </li>
+                        <li> <a href="projects.ejs">PROJECTS</a> </li>
+                    </ul>      </nav>
+        </div>
+        
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="images/ham.png" alt="this is hamburger" width="23">
+                <img class="cancel" src="images/cancelmark.png" alt="this is cancelmark" width="23">
+            </div>
+
+    <div class="mainp">
+        
+        <h1>Here the list of Projects that I have covered so far here</h1>
+    </div>
+        <div id="containerp">
+        <div class="box">
+            <img src="images/mario.jpg" alt="">
+        <h2>Thums-Taste the thunder</h2>
+        <p><a href="https://knowinglightclient.20bee014mohd.repl.co/"> Its a game for chidren in which your target is to drink Thums Up and prevent yourself to be striken by bugs.It improves power of concentration,creativity,memory.And makes us feel relaxed   </a>
+        </p>
+        </div>
+        <div class="box">
+            <img src="images/todo.jpg" alt="">
+            <h2>To-Do List </h2>
+        <p><a href="http://fathomless-fortress-34130.herokuapp.com/"> its a list of tasks you need to complete or things that you want to do. Most typically they are organised in order of their priority.It will help you to stay organised.Its seems more manageable.    </a>
+        </p>
+        </div>
+
+        <div class="box">
+            <img src="images/tic.jpg" alt="">
+            <h2>To-Do List </h2>
+        <p><a href="https://zadikhan.github.io/tictactoe-game/"> Its a Tic Tac Toe game for relaxment of mind.This classic game contributes to childrens developmental growth in numerous ways including their understanding of predictability,problem solving  </a>
+        </p>
+        </div>
+        
+        <div class="box">
+            <img src="images/clock.jpg" alt="">
+            <h2>Digital Clock </h2>
+        <p><a href="https://zadikhan.github.io/digiclock/">Its a type digital clock that displays an advance type of clock here.Well its much more advanced type then its primitive type before.looks at its beauty once.     </a>
+        </p>
+        </div>
+    </div>
+    
+    
+    <script >
+
+        console.log("running");
+        document.querySelector('.cancel').style.display='none';
+        document.querySelector('.hamburger').addEventListener("click",()=>{
+            document.querySelector('.sidebar').classList.toggle('sidebarGo');
+            
+            if(document.querySelector('.sidebar').classList.contains('sidebarGo')){
+                document.querySelector('.ham').style.display='inline';
+                document.querySelector('.cancel').style.display='none';
+                
+            }
+            else{
+        
+                document.querySelector('.ham').style.display='none';
+                setTimeout(() => { 
+        
+                    document.querySelector('.cancel').style.display='inline';
+                },400);
+        
+            }
+        
+        })
+        
+            </script>
+</body>
+
+</html>

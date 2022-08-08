@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>AZAM's world</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            
+            <nav>
+                <ul>
+                  <li> <a href="/">HOME</a> </li>
+                  <li> <a href="/intro.ejs">INTRO</a> </li>
+                  <li> <a href="/social.ejs">PLATFORM</a> </li>
+                  <li> <a href="/contact.ejs">CONTACT</a> </li>
+                  <li> <a href="/skills.ejs">SKILLS</a> </li>
+                  <li> <a href="projects.ejs">PROJECTS</a> </li>
+              </ul>
+            </nav>
+        </div>
+        <div class="main">
+            
+            <div class="hamburger">
+                <img class="ham" src="images/ham.png" alt="this is hamburger" width="23">
+                <img class="cancel" src="images/cancelmark.png" alt="this is cancelmark" width="23">
+            </div>
+            <div class="self"> <img src="images/azamkhan.jpg" alt="mine img"> </div>
+            <div class="blogcontainer">
+                <h1> I am Mohd Azam Khan </h1>
+                <div class="blogItem">
+                    <h2>College </h2>
+                    <p> I am a student of B.tech Electrical Engineering Jamia Millia Islamia.It is a Deemed University NAAC accredited A++ with its  NIRF ranking is 3.
+                        I am highly interested in tech field with  web Development and coding as my field. 
+                    </div>
+                <div class="blogItem">
+                    <h2>School Life  </h2>
+                    <p> I have done my 12 from SHRI GULAB RAI MONTESSORI,Bareilly,UP with a percentage of 84.3 and my 10 from GK CITY MONTESSORI SCHOOL,Bareilly,U.P. with a percentage of 93% </p>
+                    </div>
+                <div class="blogItem">
+                    <h2>Other Field of Interest </h2>
+                    <p> My other field of interest include Reading, Drawing, and Dancing  </p>
+                    </div>
+                  <P>
+                   <div> Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:Mohd Azam Khan </div>
+                   <div>  College &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:Jamia Millia Islamia,New Delhi</div>
+                   <div>Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:zadkhan51@gmail.com</div>
+                   <div> Contact-No&nbsp;&nbsp;&nbsp;&nbsp;:9917877831 </div>
+                   <div> Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:Lichi Bagh Quilla, Bareilly U.P. </div>    
+                </P>
+                    
+            </div>
+        </div>
+        <script >
+    
+    console.log("running");
+    document.querySelector('.cancel').style.display='none';
+    document.querySelector('.hamburger').addEventListener("click",()=>{
+        document.querySelector('.sidebar').classList.toggle('sidebarGo');
+        
+        if(document.querySelector('.sidebar').classList.contains('sidebarGo')){
+            document.querySelector('.ham').style.display='inline';
+            document.querySelector('.cancel').style.display='none';
+            
+        }
+        else{
+    
+            document.querySelector('.ham').style.display='none';
+            setTimeout(() => { 
+    
+                document.querySelector('.cancel').style.display='inline';
+            },400);
+    
+        }
+    
+    })
+    
+        </script>
+    
+</body>
+
+</html>

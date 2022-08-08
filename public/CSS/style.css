@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Hurricane&family=Lobster&family=Montserrat:wght@600;700&family=Russo+One&family=Smooch&family=Ubuntu:wght@500&display=swap');
+*{
+    
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color:#9aefe4fa;;;
+}
+
+.sidebar{
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    background-color: #98dfd6;
+    opacity: 0.9;
+   transition: transform 0.4s ease-in;
+}
+.sidebar nav li a{
+    padding:5px 15px;
+    text-decoration: none;
+    color: black;
+  border-radius: 20px;
+}
+.sidebar nav li a:hover{
+
+  background-color: white;
+}
+
+.information p{
+    font-family: 'Baloo Bhaijaan', cursive;
+    
+}
+.information h1{
+    font-family: 'Baloo Bhaijaan', cursive;
+    
+
+}
+.blogItem p{
+    font-family: 'Baloo Bhaijaan', cursive;
+    
+}
+.sidebar nav{
+    padding: 30px;
+}
+.sidebar nav li{
+    list-style: none;
+    padding: 16px 6px;
+    font-size: 31px;
+    font-family: hurricane;
+    font-weight: bold;
+}
+.main{
+    color: black;
+    width: 90vw;
+}
+.container{ 
+    display: flex;
+    
+}
+.infocontainer{
+   font-size: 20px;
+    width: 85vw;
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.devInfo{
+    font-size: 16px;
+
+    margin-top: 60px;
+    margin-left: 60px;
+ 
+    font-family: 'Baloo Bhaijaan', cursive;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.hello{
+    font-size: 3em;
+}
+.name{
+    font-weight: 600;
+    font-size: 3em;
+}
+.about{
+    font-size: 2.5em;
+}
+.buttons{
+    margin-top: 25px;
+    font-size: 16px;
+}
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 3px;
+    font-family: 'Baloo Bhaijaan', cursive;
+  
+ 
+}
+button:hover{
+    background-color:aqua ;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.devPic img{
+    border-radius: 25px;
+    border: 4px solid black;
+    width: 70vh;
+    justify-content: right;
+}
+
+
+
+.btn-sm {
+    font-size: 20px;
+    padding: 7px 13px;
+    margin: 13px 13px;
+    border-radius: 35px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: bold;
+
+}
+.blogcontainer{
+    font-family: 'Baloo Bhaijaan', cursive;
+    
+    margin: 88px;
+}
+
+
+.btn-sm:hover{
+    background-color: red;
+    border: 3px solid white;
+}
+.blogItem{
+    margin: 25px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    
+}
+.blogItem h2{
+    font-family: 'Baloo Bhaijaan', cursive;
+    
+    margin-bottom: 10px;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-top: 10px;font-family: Arial, Helvetica, sans-serif;
+}
+.information{
+    font-family: 'Baloo Bhaijaan', cursive;
+    
+    margin-top: 60px;
+    margin-left: 60px;
+ 
+}
+.information h2{
+    font-family: 'Baloo Bhaijaan', cursive;
+    
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.skill{
+    font-family: 'Baloo Bhaijaan', cursive;
+    
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid white;
+}
+.skillcontainer{
+    margin-top: 30px;
+    margin-left: 30px;
+ 
+    padding: 12px;
+}
+.skillItem{
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+
+.hundred{
+    width: 265px;
+    background-color: green;
+}
+.fifty{
+    width: 125px;
+    background-color: brown;
+}
+.t5{
+    width: 75px;
+    background-color: yellow;
+}
+
+/*  contact style */
+
+.container{ 
+    display: flex;
+    
+}
+.contactform{
+    margin-top: 34px;
+    margin-left: 94px;
+}
+.contactform h1{
+ 
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    text-align: left;   
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    font-size: 18px;
+    font-family: 'Baloo Bhaijaan', cursive;
+    
+    flex-direction: column;
+}
+.contactform div{
+    width: 32vw;
+    border-radius: 50px;
+    margin: 6px 0;
+    padding: 3px;
+}
+.contactform form div input{
+width: 260px;  
+border-radius: 15px;
+margin: 6px 0 0 0;
+padding: 3px;
+
+}
+#emailHelp{
+    font-size: 8px;
+    margin: 0 5px;
+}
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width:18px;
+    margin-right: 10px;
+}
+
+.btn{
+    font-size: 25px;
+    padding: 9px 14px;
+    border-radius: 22px;
+    background-color:azure;
+    font-weight: bold;
+    margin: 20px 3px;
+    font-family: 'Baloo Bhaijaan', cursive;
+  
+}
+.btn:hover{
+    background-color: blue;
+    cursor: pointer;
+border: 3px solid white;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top:10px;
+    left: 10px;
+}
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+
+.ham{
+    filter: invert(100%);
+}
+.cancel{
+    margin-left: 150px;
+}
+.self{
+    display: flex;
+}
+.self img{
+    display: none;
+    margin-top: 40px;
+    margin-left: 150px;
+    border-radius: 25px;
+    width: 180px;
+}
+.combine{
+ 
+    font-family: 'Baloo Bhaijaan', cursive;
+    text-align: center;
+    padding-left: 33px;
+    margin-top: 33px;
+    margin-left: 34px;
+    color: black;
+}
+.combine h1{
+    
+    font-family: 'Baloo Bhaijaan', cursive;
+}
+.combine p{
+    font-size: 22px;
+    font-family: 'Baloo Bhaijaan', cursive;
+}
+.png{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.insta{
+    margin-top: 40px;
+    margin-right: 25px;
+}
+
+.twit{
+    margin-top: 40px;
+    margin-right: 25px;
+}
+.face{
+    margin-top: 40px;
+    margin-right: 25px;
+}
+.git{
+    margin-top: 40px;
+    margin-right: 25px;
+}
+.what{
+    
+    margin-top: 40px;
+    margin-right: 25px;
+}
+
+.link{
+    
+    margin-top: 40px;
+    margin-right: 25px;
+}
+.combine img{
+     width: 50px;
+}
+.git img{
+    filter: invert(100%);
+
+}
+.mainp h1{
+    margin-top: 34px;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan', cursive;
+    
+}
+#containerp{
+    margin: 34px;
+    display: flex;
+}
+#containerp .box{
+    border: 2px solid red;
+    margin: 3px 6px;
+padding: 35px;
+border-radius: 30px;
+}
+.box p a{
+    font-family: 'Baloo Bhaijaan', cursive;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+#containerp img{
+    display: block;
+    margin: auto;
+    height: 160px;
+}
+.box p{
+    justify-content: center;
+}
+.box h2{
+    text-align: center;
+}
+
+@media(max-width:950px) { 
+.devPic{
+display: none;
+}
+.self img{
+    display: inline;
+}
+.devInfo{
+font-size: 10px;
+}
+.buttons{
+    font-size: 6spx;
+}
+.png{
+    flex-direction: column;
+}
+.intro,.blogcontainer,.contactform{
+    margin: 50px 8px;
+}
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Mohd Azam Khan</title>
+</head>
+
+<body>
+    <div class="container">
+    <div class="sidebar">
+             <nav>
+              <ul>
+                <li> <a href="/">HOME</a> </li>
+                <li> <a href="/intro.ejs">INTRO</a> </li>
+                <li> <a href="/social.ejs">PLATFORM</a> </li>
+                <li> <a href="/contact.ejs">CONTACT</a> </li>
+                <li> <a href="/skills.ejs">SKILLS</a> </li>
+                <li> <a href="projects.ejs">PROJECTS</a> </li>
+            </ul>
+        </nav>
+    </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="images/ham.png" alt="this is hamburger" width="23">
+                <img class="cancel" src="images/cancelmark.png" alt="this is cancelmark" width="23">
+            </div>
+           <div class="infocontainer">
+                <div class="devInfo">
+                    <div class="hello"> Hi I am</div>
+                    <div class="name">Mohd Azam Khan</div>
+                    <div class="about"> Full Stack Web Developer | MERN Developer </div>
+               <div class="buttons">
+
+               <a href="resume.pdf"><button>Download CV</button></a> 
+               <a href="/contact.ejs"> <button>Contact me </button>  </a>
+            </div>   
+        </div>
+        <div class="devPic"> <img src="images/azamkhan.jpg" alt="a image"> </div>
+        </div>
+        </div>
+    <script >
+
+console.log("running");
+document.querySelector('.cancel').style.display='none';
+document.querySelector('.hamburger').addEventListener("click",()=>{
+    document.querySelector('.sidebar').classList.toggle('sidebarGo');
+    
+    if(document.querySelector('.sidebar').classList.contains('sidebarGo')){
+        document.querySelector('.ham').style.display='inline';
+        document.querySelector('.cancel').style.display='none';
+        
+    }
+    else{
+
+        document.querySelector('.ham').style.display='none';
+        setTimeout(() => { 
+
+            document.querySelector('.cancel').style.display='inline';
+        },400);
+
+    }
+
+})
+
+    </script>
+    </body>
+</html>
